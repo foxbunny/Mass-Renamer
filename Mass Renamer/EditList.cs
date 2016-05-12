@@ -9,7 +9,7 @@ namespace MassRenamer
     public class EditList
     {
         // Editor
-        private static string editor = "C:\\Program Files (x86)\\Vim\\vim74\\gvim.exe";
+        private static string editor = PathFinder.FindProgram("gvim.exe");
         // Stores the original paths
         private string[] sources;
         // Stores the target paths
